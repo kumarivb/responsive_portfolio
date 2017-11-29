@@ -311,7 +311,7 @@ input[type=submit] {
 
     .auth-image {
         width: 100%
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 }
 
@@ -333,6 +333,15 @@ input[type=submit] {
     }
 
     .work {
-      width: 45%;
+        width: 45%;
+        margin-bottom: 15px;
+    }
+
+    .work:nth-child(even) {
+        margin-right: 0px;
+    }
+
+    .work:nth-child(odd) {
+        float: right;
     }
 }
