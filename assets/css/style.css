@@ -13,7 +13,6 @@ body {
 
 /* sticky footer styling */
 
-/* http://ryanfait.com/html5-sticky-footer/ */
 
 html,
 body {
@@ -198,6 +197,14 @@ h3,
   border: 1px solid #ddd;
 }
 
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
 /* contact page */
 
 #contact-form ul {
@@ -236,4 +243,88 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+/* portfolio page */
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+@media only screen and (max-width: 980px) {
+    p {
+        color: lightblue;
+    }
+
+    .container {
+        padding: 0 20px;
+        max-width: 768px;
+    }
+
+    .#main-container {
+        padding-top: 130px;
+    }
+
+    .main-section {
+        max-width: 420px;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    .auth-image {
+        width: 100%
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        color: green;
+    }   
+
+    .main-section, .sidebar {
+        max-width: 100%; 
+    }
+
+    .#main-container {
+        overflow: auto;
+    }
 }
