@@ -302,7 +302,7 @@ input[type=submit] {
     }
 
     .main-section {
-        max-width: 420px;
+        max-width: 55%;
     }
 
     .work {
@@ -326,5 +326,13 @@ input[type=submit] {
 
     .#main-container {
         overflow: auto;
+    }
+
+    .sidebar {
+        margin-bottom: 30px;
+    }
+
+    .work {
+      width: 45%;
     }
 }
