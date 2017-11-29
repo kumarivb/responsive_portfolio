@@ -287,6 +287,8 @@ input[type=submit] {
   margin-right: 25px;
 }
 
+/* media queries */
+
 @media only screen and (max-width: 980px) {
     p {
         color: lightblue;
@@ -320,9 +322,13 @@ input[type=submit] {
         color: green;
     }   
 
-    .main-section, .sidebar {
+    .main-section, {
         max-width: 100%; 
     }
+
+    .sidebar {
+        max-width: 100%;
+    } 
 
     .#main-container {
         overflow: auto;
@@ -343,5 +349,38 @@ input[type=submit] {
 
     .work:nth-child(odd) {
         float: right;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    p {
+        color: red;
+    }
+
+    #masthead {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    #logo {
+        width: 100%;
+    }    
+
+    #main-container {
+        padding-top: 10px;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    nav {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 10px; 
+    }
+
+    nav a {
+        width: 30%;
     }
 }
